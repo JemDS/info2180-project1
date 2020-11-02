@@ -3,7 +3,7 @@ window.onload= function()
 {
 
 var email = document.getElementById('email');
-var form = document.getElementsByTagName('form');
+var form = document.getElementsByTagName('form')[0];
 
 form.addEventListener("submit", (e) => { 
 	e.preventDefault();
