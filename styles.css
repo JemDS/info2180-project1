@@ -1,4 +1,9 @@
 /* Add your CSS to this file */
+*{
+  font-size: 18px;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif; 
+}
+/*------------------------------------------*/
 body {
     margin: 0;
     font-size: 16px;
@@ -9,3 +14,250 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+
+/*.overview-hero{
+  background-color: #E2E8F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testing{
+  background-color: #4A5568;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter{
+  background-color: #48BB78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+footer{
+  background-color: #4A5568;
+  color: #FFFFFF;
+  padding: 10px;  
+}}*/
+/*------------------header----------------------------------*/
+header .container{
+	background-color: #FFFFFF;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+header h1{
+	font-size: 18px;
+}
+
+nav li, nav a{
+	text-decoration: none;
+	color: #6b7280;
+	font-size: 18px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+nav li a{
+	transition: all 0.3s ease 0s;
+}
+
+nav li a:hover{
+	color: #5A67D8;
+}
+/*--------------------------------------------------------*/
+/*--------------Hero Overview-----------------------------*/
+.overview-hero .container{
+	display: flex;
+	background-color: #E2E8F0;
+  	justify-content: center;
+  	align-items: center;
+	padding: 30px 10%;
+}
+.overview-hero-image img{
+  	width: 300px;
+  	height: 200px;
+  	align-items: left;
+  	padding: 25px 25px 10px;
+}
+.overview-hero-text h2{
+   	width: 600px;
+  	align-items: right;
+   	padding: 25px 25px 0px;
+   	font-size: 24px;
+}
+
+.overview-hero-text p{
+  	width: 600px;
+  	align-items: right;
+  	padding: 25px 25px 25px;
+}
+/*--------------------------------------------------------*/
+
+/*-----------------Learn about----------------------------*/
+
+.learn-about .container h2{
+	color: #48BB78;
+	font-size: 24px;
+}
+
+.learn-about .container{
+	display: grid;
+	position: relative;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr));
+	padding-top: 20px;
+	padding-bottom: 30px;
+	grid-gap: 20px;
+
+}
+
+.card{
+	border-color: #E2E8F0;
+	border-radius: 5px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.card img{
+	width: 100%;
+	display: block;
+}
+
+.learn-about .container h3{
+	color: #48BB78;
+	font-size: 21px;
+	padding: 0px 10%;
+}
+.learn-about .container p{
+	padding: 2px 10%;
+}
+/*--------------------------------------------------------*/
+
+/*-----------------Covid Tetsing--------------------------*/
+.testing .container{
+	background-color: #4A5568;
+	color: #FFFFFF;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+.testing-desciption h2{
+	width:600px;
+  	align-items: right;
+   	padding: 25px 25px 0px;
+}
+
+.testing-desciption p{
+	width: 600px;
+  	align-items: right;
+  	padding: 25px 25px 25px;
+}
+.cta .btn{
+	padding: 9px 25px;
+	background-color: #48BB78;
+	color: #FFFFFF;
+	border:none;
+	border-radius:50px;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+/*--------------------------------------------------------*/
+
+/*-----------------Recent Stories-------------------------*/
+.stories .container h2, a{
+	color: #5A67D8;
+}
+
+.stories .container h3{
+	font-size: 18px;
+	width:600px;
+  	align-items: right;
+   	padding: 25px 25px 0px;
+}
+
+.stories .container p{
+	width: 600px;
+  	align-items: right;
+  	padding: 25px 25px 25px;
+}
+
+.stories .container article img{
+	display: flex;
+  	width: 30%;
+  	border-radius: 50%;
+}
+.stories article{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+/*--------------------------------------------------------*/
+
+/*-----------------News Letter----------------------------*/
+.newsletter .container{
+	background-color: #48BB78;
+	color: #FFFFFF;
+	align-items: center;
+	padding: 30px 10%;
+}
+.newsletter .container h3{
+	font-size: 18px;
+	width:600px;
+	align-items: center;
+  	text-align: center;
+   	padding: 0px 20%
+}
+.newsletter .container p{
+	width: 600px;
+	align-items: center;
+  	text-align: left;
+   	padding: 0px 20%
+}
+
+.newsletter .form-group{
+	padding: 0px 20%;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	grid-gap: 2px;
+}
+
+button{
+	display: inline-block;
+	padding: 9px 25px;
+	background-color: #5A67D8;
+	color: #FFFFFF;
+	border:none;
+	border-radius:5px;
+	transition: all 0.3s ease 0s;
+}
+/*--------------------------------------------------------*/
+
+
+/*-----------------Footer--------------------------------*/
+footer .container{
+	background-color: #4A5568;
+	color: #FFFFFF;
+	display:flex;
+	align-items: center;
+	padding: 30px 10%;
+}
+/*--------------------------------------------------------*/
