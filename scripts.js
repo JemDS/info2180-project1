@@ -2,14 +2,23 @@
 window.onload= function()
 {
 
-var email = document.getElementByID('email');
-var form = document.getElementByTag('form');
-/*const errorElm = document.getElementByID('error');*/
+var email = document.getElementById('email');
+var form = document.getElementsByTagName('form');
 
-form.addEventListener('submit', (e) => { 
+form.addEventListener("submit", (e) => { 
+	e.preventDefault();
 
-	if(email.value ==='') || (email.value == null){
-		e.preventDefault();
+	console.log('valid email address!');
+
+   });
+
+	
+
+	if(email.value ===''){
+		alert('Please enter valid email address!');
+	}
+
+	if(email.value == null){
 		alert('Please enter valid email address!');
 	}
 	else{
